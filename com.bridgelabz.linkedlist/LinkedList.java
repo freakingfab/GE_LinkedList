@@ -34,6 +34,17 @@ class LinkedList<T> {
     }
 
     /*
+        @desc: add a node at start
+        @param: data for the node
+        @return: void
+     */
+    public void addAtBegin(T data) {
+        Node<T> newNode = new Node<>(data);
+        newNode.next = head;
+        head = newNode;
+    }
+
+    /*
         @desc: print entire linkedlist
         @params: none
         @return: void
