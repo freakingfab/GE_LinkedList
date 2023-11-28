@@ -45,6 +45,35 @@ class LinkedList<T> {
     }
 
     /*
+        desc: add a node at specific position in the linked list(zero-based indexing)
+        @params: data and position for the node
+        @return: void
+     */
+    public void addAtPosition(T data, int position) {
+        if (position < 0) {
+            System.out.println("Invalid position");
+            return;
+        }
+        Node<T> newNode = new Node<>(data);
+        if (position == 0) {
+            addAtBegin(data);
+            return;
+        }
+
+        Node<T> temp = head;
+        for (int i = 0; i < position - 1 && temp != null; i++) {
+            temp = temp.next;
+        }
+
+        if (temp == null) {
+            System.out.println("Invalid position");
+            return;
+        }
+        newNode.next = temp.next;
+        temp.next = newNode;
+    }
+
+    /*
         @desc: print entire linkedlist
         @params: none
         @return: void
