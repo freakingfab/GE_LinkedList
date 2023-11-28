@@ -10,9 +10,11 @@ public class Main {
         System.out.print("Linked List: ");
         linkedList.display();
 
-        linkedList.popLast();
-
-        System.out.print("Linked List after popLast: ");
-        linkedList.display();
+        if(linkedList.search(35)!=null){
+            System.out.println("Found the node with given key");
+        }
+        else{
+            System.out.println("Node with given key not found");
+        }
     }
 }

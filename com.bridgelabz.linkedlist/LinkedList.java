@@ -108,6 +108,22 @@ class LinkedList<T> {
     }
 
     /*
+        @desc: search the node with given key in the linkedlist
+        @params: data for node
+        @return: Node
+     */
+    public Node<T> search(T key) {
+        Node<T> temp = head;
+        while (temp != null) {
+            if (temp.data.equals(key)) {
+                return temp;
+            }
+            temp = temp.next;
+        }
+        return null;
+    }
+
+    /*
         @desc: print entire linkedlist
         @params: none
         @return: void
