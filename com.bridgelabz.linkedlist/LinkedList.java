@@ -144,6 +144,27 @@ class LinkedList<T> {
     }
 
     /*
+        @desc: it deletes node with given key
+        @params: data for node
+        @return: void
+     */
+    public void deleteSpecificNode(T key){
+        Node<T> foundNode = search(key);
+        if(foundNode==null){
+            System.out.println("Node with key not present");
+            return;
+        }
+        if(foundNode==head){
+            head=null;
+            return;
+        }
+        Node<T> temp = head;
+        while(temp.next!=foundNode){
+            temp = temp.next;
+        }
+        temp.next = temp.next.next;
+    }
+    /*
         @desc: print entire linkedlist
         @params: none
         @return: void

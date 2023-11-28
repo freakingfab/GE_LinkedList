@@ -10,7 +10,7 @@ public class Main {
         System.out.print("Linked List: ");
         linkedList.display();
 
-        linkedList.addAfterSearchedNode(12,56);
+        linkedList.deleteSpecificNode(56);
 
         System.out.print("Linked List after adding: ");
         linkedList.display();
