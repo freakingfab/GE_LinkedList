@@ -87,6 +87,27 @@ class LinkedList<T> {
     }
 
     /*
+        @desc: it pops out from last
+        @params: none
+        @return: void
+     */
+    public void popLast() {
+        if (head != null) {
+            if(head.next==null){
+                head=null;
+                return;
+            }
+            Node<T> temp = head;
+            while(temp.next.next!=null){
+                temp=temp.next;
+            }
+            temp.next=null;
+        } else {
+            System.out.println("Cannot pop from an empty list");
+        }
+    }
+
+    /*
         @desc: print entire linkedlist
         @params: none
         @return: void
