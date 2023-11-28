@@ -74,6 +74,19 @@ class LinkedList<T> {
     }
 
     /*
+        @desc: it pops out the first node
+        @params: none
+        @return: void
+     */
+    public void popFront() {
+        if (head != null) {
+            head = head.next;
+        } else {
+            System.out.println("Cannot pop from an empty list");
+        }
+    }
+
+    /*
         @desc: print entire linkedlist
         @params: none
         @return: void

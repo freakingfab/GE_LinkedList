@@ -9,5 +9,10 @@ public class Main {
 
         System.out.print("Linked List: ");
         linkedList.display();
+
+        linkedList.popFront();
+
+        System.out.print("Linked List after popFront: ");
+        linkedList.display();
     }
 }
