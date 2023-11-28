@@ -3,7 +3,7 @@ package com.bridgelabz.linkedlist;
 /*
     @desc: implements creating a single Node object for linked list of type T
  */
-class Node<T> {
+class Node<T extends Comparable<T>> {
     T data;
     Node<T> next;
 

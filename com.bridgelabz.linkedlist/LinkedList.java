@@ -3,7 +3,7 @@ package com.bridgelabz.linkedlist;
 /*
     @desc: implement collection of Node objects
  */
-class LinkedList<T> {
+class LinkedList<T extends Comparable<T>> {
     Node<T> head;
 
     /*

@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5bba10c1-7509-4ac7-a07f-dfbc69a524e4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/com.bridgelabz.linkedlist/SortedLinkedList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/com.bridgelabz.linkedlist/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/com.bridgelabz.linkedlist/LinkedList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/com.bridgelabz.linkedlist/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/com.bridgelabz.linkedlist/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.bridgelabz.linkedlist/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/com.bridgelabz.linkedlist/Node.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +39,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "UC8__add__after__searched__node",
+    "git-widget-placeholder": "UC9__delete__specific__node",
     "jdk.selected.JAVA_MODULE": "1.8",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -74,7 +76,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1701177056788</updated>
-      <workItem from="1701177057811" duration="4969000" />
+      <workItem from="1701177057811" duration="5499000" />
     </task>
     <servers />
   </component>

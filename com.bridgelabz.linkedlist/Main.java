@@ -2,17 +2,12 @@ package com.bridgelabz.linkedlist;
 
 public class Main {
     public static void main(String[] args) {
-        LinkedList<Integer> linkedList = new LinkedList<>();
-        linkedList.addAtBegin(70);
-        linkedList.addAtBegin(56);
-        linkedList.addAtBegin(30);
+        SortedLinkedList<Integer> linkedList = new SortedLinkedList<>();
+        linkedList.add(70);
+        linkedList.add(56);
+        linkedList.add(30);
 
-        System.out.print("Linked List: ");
-        linkedList.display();
-
-        linkedList.deleteSpecificNode(56);
-
-        System.out.print("Linked List after adding: ");
+        System.out.print("Ordered Linked List: ");
         linkedList.display();
     }
 }
