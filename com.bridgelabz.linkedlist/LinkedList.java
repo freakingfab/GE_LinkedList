@@ -124,6 +124,26 @@ class LinkedList<T> {
     }
 
     /*
+        @desc: insert a node after a specific node
+        @params: data for new node and data for specific node
+        @return: void
+     */
+    public void addAfterSearchedNode(T newNodeData, T key){
+        Node<T> foundNode = search(key);
+        if(foundNode==null){
+            System.out.println("Node with key not present");
+            return;
+        }
+        int count = 0;
+        Node<T> temp = head;
+        while(temp!=foundNode){
+            count = count + 1;
+            temp = temp.next;
+        }
+        addAtPosition(newNodeData, count + 1);
+    }
+
+    /*
         @desc: print entire linkedlist
         @params: none
         @return: void
