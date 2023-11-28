@@ -20,7 +20,7 @@ class LinkedList<T> {
         @params: data for node to be added
         @return: void
      */
-    public void add(T data) {
+    public void addAtEnd(T data) {
         Node<T> newNode = new Node<>(data);
         if (head == null) {
             head = newNode;
